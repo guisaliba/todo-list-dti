@@ -28,7 +28,8 @@ Aplicação desenvolvida em C# utilizando o framework ASP.NET Core MVC. Essa apl
   - O campo "Nome" deve estar preenchido
   - O campo "Data" deve estar preenchido, e tem de estar no futuro
   - Caso os valores do campo sejam válidos, um novo lembrete é criado
-  - Caso a data do lembrete já exista, ele é inserido dentro da lista referente àquele dia; caso não, um novo dia é exibido contendo o novo lembrete
+  - Caso a data do lembrete já exista, ele é inserido dentro da lista referente àquele dia
+  - Caso não, um novo dia é exibido contendo o novo lembrete
 - Visualizar os lembretes em forma de lista, em ordem cronológica
 - Deletar um determinado lembrete
 
