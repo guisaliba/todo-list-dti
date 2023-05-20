@@ -1,5 +1,3 @@
-# todo-list-dti
-
 <h1 align="center">To-Do List</h1>
 
 <p align="center">
