@@ -24,7 +24,7 @@ Aplicação desenvolvida em C# utilizando o framework ASP.NET Core MVC. Essa apl
 ## 🕹️ Funcionalidades
 
 - Criação de lembretes informando nome e data do lembrete
--Validações ao criar um novo lembrete:
+- Validações ao criar um novo lembrete:
   - O campo "Nome" deve estar preenchido
   - O campo "Data" deve estar preenchido, e tem de estar no futuro
   - Caso os valores do campo sejam válidos, um novo lembrete é criado
