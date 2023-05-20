@@ -30,6 +30,7 @@ Aplicação desenvolvida em C# utilizando o framework ASP.NET Core MVC. Essa apl
   - Caso não, um novo dia é exibido contendo o novo lembrete
 - Visualizar os lembretes em forma de lista, em ordem cronológica
 - Deletar um determinado lembrete
+- Deletar todos os lembretes de uma só vez
 
 ## 🚀 Como executar
 
