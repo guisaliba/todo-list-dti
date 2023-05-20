@@ -1,0 +1,28 @@
+@model TodoViewModel
+
+<link rel="stylesheet" href="~/Home/Form.module.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+
+<form asp-action="Create" id="form-action" method="post" role="form">
+    <div class="form-group">
+        <label asp-for="Todo.Name" class="form-label">Nome do lembrete</label>
+        <input asp-for="Todo.Id" type="hidden" />
+        <input asp-for="Todo.Name" class="form-input" data-val="true" />
+        <span asp-validation-for="Todo.Name" class="form-validation-error"></span>
+    </div>
+  
+    <div class="form-group">
+        <label asp-for="Todo.Date" class="form-label">Data do lembrete</label>
+        <input asp-for="Todo.Date" class="form-input" data-val="true" type="date" webkitdirectory />
+        <span asp-validation-for="Todo.Date" class="form-validation-error"></span>
+    </div>
+    
+    
+    <input type="submit" id="form-button" class="form-btn" value="Criar lembrete" />
+
+</form>

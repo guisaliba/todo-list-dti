@@ -1,0 +1,81 @@
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  background-color: #fff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 32px;
+  padding-left: 32px;
+}
+
+.my-todos {
+  font-family: 'Sora', sans-serif;
+}
+
+.todos-table {
+  margin-top: 16px;
+  grid-column: 2;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+.date-group {
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  padding: 8px;
+}
+
+.todos-column {
+  padding-left: 24px;
+}
+
+.todos-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding-left: 24px;
+}
+
+.buttons-column {
+  text-align: center;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.deleteall-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-family: Sora;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #bf0603;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.deleteall-btn:hover {
+  background-color: #a90907;
+}
+
+.no-todos {
+  padding: 8px;
+  margin-top: 42px;
+  font-family: Sora;
+  font-size: 15px;
+  font-weight: 500;
+}

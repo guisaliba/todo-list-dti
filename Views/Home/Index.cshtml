@@ -1,0 +1,49 @@
+﻿@model TodoViewModel
+
+<link rel="stylesheet" href="~/Home/Index.module.css" />
+<header class="todos-list-title">
+  <h1 class="my-todos">Meus lembretes</h1>
+</header>
+<table class="todos-table">
+  <thead>
+    <tr>
+      <th scope="col" style="display: none;">Id</th>
+    </tr>
+  </thead>
+  <tbody>
+    @if (TempData["todoList"] != null)
+    {        
+        var todoViewModel = TempData.Get<TodoViewModel>("todoList");
+        
+        if (todoViewModel.TodoDictionary != null && todoViewModel.TodoDictionary.Count > 0)
+        {
+            foreach (var group in todoViewModel.TodoDictionary)
+            {
+              <tr>
+              <td colspan="4" class="date-group">@group.Key.ToString("dd/MM/yyyy")</td>
+              </tr>
+              foreach (var todo in group.Value)
+              {
+                <tr>
+                  <td class="todos-column" scope="row" style="display: none;">@todo.Id</td>
+                  <td class="todos-name">- @todo.Name</td>
+                  <td class="buttons-column">
+                    <input type="submit" value="❌" class="delete-btn" onClick="deleteTodo(@todo.Id)">
+                  </td>
+                </tr>
+              }
+            }
+            
+                <form asp-controller="Home" asp-action="ResetTable" method="post">
+              <button type="submit" class="deleteall-btn">Excluir todos</button>
+            </form>
+        }
+        else
+        {
+          <span class="no-todos">Nenhum lembrete, comece criando um!</span>
+        }
+        
+        TempData.Keep("todoList");
+    }
+  </tbody>
+</table>

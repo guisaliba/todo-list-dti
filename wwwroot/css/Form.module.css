@@ -1,0 +1,59 @@
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-label {
+  color: #202020;
+  display: block;
+  margin-bottom: 5px;
+  font-family: Sora;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.form-input {
+  font-family: Poppins;
+  font-weight: 500;
+  background-color: #edf2f4;
+  width: 50%;
+  padding: 8px;
+  border: 2px solid #202020;
+  border-radius: 8px;
+}
+
+.form-input::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+input[type='date']:in-range::-webkit-datetime-edit-year-field,
+input[type='date']:in-range::-webkit-datetime-edit-month-field,
+input[type='date']:in-range::-webkit-datetime-edit-day-field,
+input[type='date']:in-range::-webkit-datetime-edit-text {
+  color: transparent;
+}
+
+.form-validation-error {
+  display: block;
+  margin-top: 4px;
+  font-family: Sora;
+  font-weight: 400;
+  font-size: 14px;
+  color: #dc3545;
+}
+
+.form-btn {
+  margin-top: 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-family: Sora;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #7209b7;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  background-color: #5f089a;
+}
